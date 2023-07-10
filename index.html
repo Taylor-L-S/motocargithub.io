@@ -1,0 +1,464 @@
+<!-- shift + ! + enter -->
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- RWD 自適應網頁-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href = "css/style.css">
+    
+    <!--中文字形 https://fonts.google.com/  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+    <!-- 背景色 https://colorhunt.co/ -->
+
+    <!-- 小圖示 icon 的連結網址(查表法) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/36775645a7.js" crossorigin="anonymous"></script>
+    <title>MOTO好車網</title>
+</head>
+<body>
+    <header>
+        <div>
+            <!--<nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">MOTO好車網</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+            -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"> <img src="MOTO LOGO.jpg"/></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+
+                <!--<div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="aboutDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        關於我們
+                        </button>
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="#">連結1</a></li>
+                            <li><a class="dropdown-item" href="#">連結2</a></li>
+                            <li><a class="dropdown-item" href="#">連結3</a></li>
+                            </ul>
+                        </div>                
+                -->
+
+                        
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            關於我們
+                                </a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="ques_p3.html" target="ank">企業精神</a></li>                     
+                                <li><a class="dropdown-item" href="https://www.lee-tire.com.tw/" target="_blank">人才招募</a></li>
+                                <li><a class="dropdown-item" href="https://www.lee-tire.com.tw/" target="_blank">異業合作</a></li>
+                                <li><a class="dropdown-item" href="https://www.lee-tire.com.tw/" target="_blank">公益合作</a></li>
+                                <li><a class="dropdown-item" href="https://www.hoshengshop.tw/" target="_blank">廣告刊登</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">免責聲明</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="https://www.7car.tw/article/second/53" target="_blank">新車報報</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">聯絡我們</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            協力廠商
+                                </a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://www.cst.com.tw/" target="_blank">正新輪胎</a></li>
+                                <li><a class="dropdown-item" href="http://www.speedy168.com/" target="_blank">SPEEDY 競速車業</a></li>
+                                <li><a class="dropdown-item" href="https://www.hoshengshop.tw/" target="_blank">禾笙科技-汽車影音</a></li>                                
+                                <li><a class="dropdown-item" href="https://www.lee-tire.com.tw/" target="_blank">小李輪胎</a></li>
+                                <li><a class="dropdown-item" href="https://www.facebook.com/people/%E7%99%BE%E5%A3%AB%E5%A8%81%E6%B1%BD%E8%BB%8A%E4%BF%9D%E4%BF%AE%E7%B6%B2/100064014491331/" target="_blank">百士威汽車保修網</a></li>
+                                <li><a class="dropdown-item" href="https://www.taiwan-carshop.com/carshop/17401/c005998.html" target="_blank">鴻正汽車修護廠</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled">限時活動</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <!--<button class="btn btn-outline-success btn-primary" type="submit">開始找車</button>-->
+                        <button type="button" class="btn btn-info">開始找車</button>
+                        
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- 第一區塊banner-->
+    <section id = "intro" style="background: linear-gradient(45deg, rgb(128 127 67 / 90%), transparent) 20%, url(pictures/road_view1.jpg) no-repeat center;background-size: cover;">
+        <!-- id class 的差別，id如身分證號唯一性、class可重複性-->
+        <div class = "jumbotron">
+            <!-- div 會跟著CSS的設定連動-->
+            <div class = "container">
+                <div class = "row">
+                    <div class = "col-md-12"><!-- 網頁可分12欄，為最大，可以自由切割 -->
+                        <h1 class = "display-4 text-light" ><br>挑選好車 就來MOTO好車網!!</h1>
+                        <!-- h1可設定字樣大小，可搭配 display- 二次設定大小-->
+                        <p class="lead display-7 text-light" >找尋你的愛車，從此開始~</p>
+                        <a class="btn btn-primary btn-lg" href ='ques_p2.html' role = "button">了解適合您的車款</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!--第二區塊介簡-->
+    <section id = "second">
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-md-8 offset-md-2 text-center">
+                    <h3>開始找尋您的愛車</h3>
+                    <!--<i class = "fa-regular fa-magnifying-glass"></i>-->
+                    <div class = "row">
+
+                        <div class = "col-md-4">
+                            <img src = pictures/跑車.jpg>
+                            <a class="btn btn-primary btn-lg" href ='#' role = "button">跑車</a>
+                        </div>
+
+                        <div class = "col-md-4">
+                            <img src = pictures/休旅車.jpg>
+                            <a class="btn btn-primary btn-lg" href ='#' role = "button">休旅車</a>
+                        </div>
+
+                        <div class = "col-md-4">
+                            <img src = pictures/轎車.jpg>
+                            <a class="btn btn-primary btn-lg" href ='#' role = "button">轎車</a>
+                        </div>
+
+                        <div class = "col-md-4">
+                            <img src = pictures/小車.jpg>
+                            <a class="btn btn-primary btn-lg" href ='#' role = "button">小車</a>
+                        </div>
+
+                        <div class = "col-md-4">
+                            <img src = pictures/貨車.jpg>
+                            <a class="btn btn-primary btn-lg" href ='#' role = "button">貨車</a>
+                        </div>
+
+                        <div class = "col-md-4">
+                            <img src = pictures/吉普-皮卡.jpg>
+                            <a class="btn btn-primary btn-lg" href ='#' role = "button">其他</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+        <!--第三區塊 商品-->
+    <section id = "latest">
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-md-12 text-center">
+                    <h3>最新上架</h3>
+                    <div class = "row">
+
+                        <div class = "col-md-4 text-left">
+                            <div class ="outer">
+                                <a href = "single.html">
+                                    <div class = "upper">
+                                        <img src="pictures/1993 TOYOTA Corolla.jpg" alt="照片描述">
+                                
+                                    </div>
+                                </a>
+                                    <div class = "lower">
+                                        <h3>Toyota Corolla 手排</h3><h2>8.2萬</h2>
+                                        <!--<i class="fa-regular fa-circle-dollar"></i>-->
+                                        <span><i class = "far fa-clock"></i> 1993/35萬公里 </span>
+
+                                    </div>
+                            </div>
+                        </div>
+                        
+                        <div class = "col-md-4 text-left">
+                            <div class ="outer">
+                                <a href = "single.html">
+                                    <div class = "upper">
+                                        <img src = "pictures/2010 TOYOTA Wish 2.0E.jpg">
+                                
+                                    </div>
+                                </a>
+
+                                    <div class = "lower">
+                                        <h3>6月新車 豐田希望號E級</h3><h2>25.6萬</h2>
+                                        <span><i class = "far fa-clock"></i> 2010/18萬公里  豐田車系優惠活動 </span>
+                                    </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class = "col-md-4 text-left">
+                            <div class ="outer">
+                                <a href = "single.html">
+                                    <div class = "upper">
+                                        <img src = "pictures/2006 mazda 6.jpg">
+                                
+                                    </div>
+                                </a>
+                                    <div class = "lower">
+                                        <h3>7月新車 馬家 六公子 </h3><h2>21.5萬</h2>
+                                        <span><i class = "far fa-clock"></i> 2006/24萬公里 </span>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class = "row">
+
+                        <div class = "col-md-4 text-left">
+                            <div class ="outer">
+                                <a href = "single.html">
+                                    <div class = "upper">
+                                        <img src = "pictures/2015 BMW 320i Touring M Sport (F31).jpg">
+                                
+                                    </div>
+                                </a>
+                                   <div class = "lower">
+                                        <h3>BMW 320i Touring M Sport (F31)</h3><h2>105.5萬</h2>
+                                        <span><i class = "far fa-clock"></i> 2015/9萬公里 </span>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class = "col-md-4 text-left">
+                            <div class ="outer">
+                                <a href = "single.html">
+                                    <div class = "upper">
+                                        <img src = "pictures/2002 VW T4.jpg">
+                                
+                                    </div>
+                                </a>
+                                    <div class = "lower">
+                                        <h3>2002 VW T4 </h3><h2>16.5萬</h2>
+                                        <span><i class = "far fa-clock"></i> 2002/18萬公里 </span>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class = "col-md-4 text-left">
+                            <div class ="outer">
+                                <a href = "single.html">
+                                    <div class = "upper">
+                                        <img src = "pictures/2007 Honda CIVIC.jpg">
+                                
+                                    </div>
+                                </a>
+                                    <div class = "lower">
+                                        <h3>2007 Honda CIVIC </h3><h2>22.5萬</h2>
+                                        <span><i class = "far fa-clock"></i> 2007/12萬公里 </span>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <!--第三區塊 商品-->
+    <section id = "latest">
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-md-12 text-center">
+                    <h3>你可能感興趣...</h3>
+                    <div class = "row">
+
+                        <div class = "col-md-4 text-left">
+                            <div class ="outer">
+                                <a href = "single.html">
+                                    <div class = "upper">
+                                        <img src = "pictures/skyline.jpg">
+                                
+                                    </div>
+                                </a>
+                                    <div class = "lower">
+                                        <h3>Toyota Corolla</h3>
+                                        <span><i class="fa-regular fa-circle-dollar"></i>8.2萬</span><br>
+                                        <span><i class = "far fa-clock"></i> 1993/35萬公里 </span>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class = "col-md-4 text-left">
+                            <div class ="outer">
+                                <a href = "single.html">
+                                    <div class = "upper">
+                                        <img src = "pictures/skyline.jpg">
+                                
+                                    </div>
+                                </a>
+                                    <div class = "lower">
+                                        <h3>6月新車</h3>
+                                        <span><i class = "fas fa-map-marker-lat"></i> 豐田希望號J級 </span><br>
+                                        <span><i class = "far fa-clock"></i> 豐田車系優貨活動 </span>
+                                    </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class = "col-md-4 text-left">
+                            <div class ="outer">
+                                <a href = "single.html">
+                                    <div class = "upper">
+                                        <img src = "pictures/skyline.jpg">
+                                
+                                    </div>
+                                </a>
+                                    <div class = "lower">
+                                        <h3>7月新車</h3>
+                                        <span><i class = "fas fa-map-marker-lat"></i> 豐田希望號J級 </span><br>
+                                        <span><i class = "far fa-clock"></i> 豐田車系優貨活動 </span>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class = "row">
+
+                        <div class = "col-md-4 text-left">
+                            <div class ="outer">
+                                <a href = "single.html">
+                                    <div class = "upper">
+                                        <img src = "pictures/skyline.jpg">
+                                
+                                    </div>
+                                </a>
+                                    <div class = "lower">
+                                        <h3>7月新車</h3>
+                                        <span><i class = "fas fa-map-marker-lat"></i> 豐田希望號J級 </span><br>
+                                        <span><i class = "far fa-clock"></i> 豐田車系優貨活動 </span>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class = "col-md-4 text-left">
+                            <div class ="outer">
+                                <a href = "single.html">
+                                    <div class = "upper">
+                                        <img src = "pictures/skyline.jpg">
+                                
+                                    </div>
+                                </a>
+                                    <div class = "lower">
+                                        <h3>7月新車</h3>
+                                        <span><i class = "fas fa-map-marker-lat"></i> 豐田希望號J級 </span><br>
+                                        <span><i class = "far fa-clock"></i> 豐田車系優貨活動 </span>
+                                    </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class = "col-md-4 text-left">
+                            <div class ="outer">
+                                <a href = "single.html">
+                                    <div class = "upper">
+                                        <img src = "pictures/skyline.jpg">
+                                
+                                    </div>
+                                </a>
+                                    <div class = "lower">
+                                        <h3>7月新車</h3>
+                                        <span><i class = "fas fa-map-marker-lat"></i> 豐田希望號J級 </span><br>
+                                        <span><i class = "far fa-clock"></i> 豐田車系優貨活動 </span>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--第四區塊 輸入信箱-->
+    <section id = "email">
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-md-8 offset-md-2 text-center">
+                    <h3>加入我們的Email List</h3>
+                </div>
+            </div>
+            <div class = "row">
+                <div class="col-md-8 offset-md-2 text-left">
+                    <p>當有適合您的車出現時我們將通知您!!</p>
+                    <div class="input-group input-group-lg">
+                        <input type = "text" class = "form-control" aria-label = "Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="你的電子信箱">
+                    </div>
+                    <a class="btn btn-warning btn-lg" href="mailto:march980141301@yahoo.com.tw" role = "button">提交</a>
+                </div>
+            </div>        
+    </section>
+
+
+    <!--第五區塊 footer-->
+    <footer>
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-md-4">
+                    <img src="img/logo.png" alt="" width="170">
+                    <p>讓我們實現您的夢想<br>您最信賴的購車平台</p>
+                </div>
+                <div class = "col-md-4">
+                    <h4>網站地圖</h4>
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="all.html">最新消息</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="faq.html">VUE作品</a></li>
+                        <li><a href="contact.html">聯絡我們</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class = "col-md-4">
+                <h4>聯絡我們</h4>
+                <p>高雄市某區某路某門牌號碼<br>
+                    telephone:07-123-1231<br>
+                    E-mail:<a href='mfa153153153@你找不到我'>gogtravel@ucontfindme</a>
+                </p>
+            </div>        
+        </div>
+    </section>
+</body>
+</html>
